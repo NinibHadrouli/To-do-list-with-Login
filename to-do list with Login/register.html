@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="styleSheet">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>To-do list</title>
+</head>
+<body id="bodyProp" >
+ 
+  <div class="regCard inlogningRegCard" id="inlogningRegCard">
+    <!-- <h2>To-do list</h2>
+    <form id="inputFormIn"  name="formInfo">
+        <label id="lableUserNameLog">Email</label>
+        <input class="input" id="inputUserLog"  placeholder="Insert User email"  >
+        <br>
+        <br>
+        <label id="lablePass">password</label>
+        <input class="input" id="inputPassLog"  type="password" placeholder="Insert password"  >
+        <br>
+        <label id="labWrongInMessage">User name or password is wrong !!</label>
+        <br>
+        <br>
+       <a href="#"><input id="btnLogIn" class="btnProp" type="button" value="Log in"></a>
+        <a><button  id="btnRegNewUser" class="btnProp">Sign Up</button></a>
+     </form> -->
+     
+ </div>
+ <div class="regCard" id="regCard">
+  <!--  <h3 id="signUp">Sign Up</h3>
+   <h4 id="req">* Required </h2>
+        <form id="inputForm" >
+            <label id="lableFirst">First name ggg *</label>
+            <input class="input" id="inputFirst" type="text" value="" placeholder="Insert First name">
+            
+            <label id="lableLast">Last name </label>
+            <input class="input" id="inputLast" type="text" value="" placeholder="Insert Last name">
+            <br>
+            <br>
+            <label id="labEmail">Email *</label>
+            <input class="input" id="inputEmail" type="email" value="" placeholder="Insert Email">
+            <br>
+            <br>
+             <label id="labTel">Mobile *</label>
+            <input class="input" id="inputTel" type="tel" value="" placeholder="Insert mobile">
+            <br>
+            <br> 
+            <label id="labBirth">Birthday *</label>
+            <input class="input" id="inputBirth" type="date" value="" placeholder="Insert birthday">
+            <br>
+            <br>
+
+            <label id="lablePass">password *</label>
+            <input class="input" id="inputPass"type="password" value="" placeholder="Insert password">
+            <input id="showpass" type="radio" onclick="showPassword(id)">show pass
+            <br>
+            <br>
+            <label id="labRepass">Re-Password *</label>
+            <input class="input" id="repass" type="password" value="" placeholder="Repeat password">
+          
+            <br> 
+            
+            <label id="logRes"></label>
+            <h4 id="termsLab">Terms of Use</h4>
+            <p id="Terms">Ninininczxv Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut, nobis voluptatibus! Nam quas, ab, expedita fugit recusandae blanditiis architecto natus impedit facere cumque sed cum, illo omnis totam ullam maxime. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus excepturi alias praesentium sint, suscipit facilis repellendus ea aliquam tempore eum maxime architecto nesciunt quasi molestias quibusdam vitae nisi voluptate! Nulla!</p>
+            <input id="radAg" class="radAg" type="radio" name="Agree">
+            <label id="ragAgLab" class="radAg">Agree</label>
+            <label id="radAgWrong">You must accept terms first</label>
+            <br><br>
+             <input id="btn-reg"  class="btnProp" type="button" value="Register" name="Register">
+            <a   href="#"><input id="btnGoToLog" type="button" value="Back to log in" class="btnProp"></a>
+          </form> -->
+        </div>
+     
+   <script  defer >
+       //**************Register code**** *//
+
+        //************************** Div code **************
+        let divInlogningRegCard=(
+          `
+              <h2>To-do list</h2>
+        <form id="inputFormIn"  name="formInfo">
+            <label id="lableUserNameLog">Email</label>
+            <input class="input" id="inputUserLog"  placeholder="Insert User email"  >
+            <br>
+            <br>
+            <label id="lablePass">password</label>
+            <input class="input" id="inputPassLog"  type="password" placeholder="Insert password"  >
+            <br>
+            <label id="labWrongInMessage">User name or password is wrong !!</label>
+            <br>
+            <br>
+          <a href="#"><input id="btnLogIn" class="btnProp" type="button" value="Log in"></a>
+            <a><button  id="btnRegNewUser" class="btnProp">Sign Up</button></a>
+        </form>
+        
+        `
+        )
+        let divRegCard=(
+          ` <h3 id="signUp">Sign Up</h3>
+   <h4 id="req">* Required </h2>
+        <form id="inputForm" >
+            <label id="lableFirst">First name *</label>
+            <input class="input" id="inputFirst" type="text" value="" placeholder="Insert First name">
+            
+            <label id="lableLast">Last name </label>
+            <input class="input" id="inputLast" type="text" value="" placeholder="Insert Last name">
+            <br>
+            <br>
+            <label id="labEmail">Email *</label>
+            <input class="input" id="inputEmail" type="email" value="" placeholder="Insert Email">
+            <br>
+            <br>
+             <label id="labTel">Mobile *</label>
+            <input class="input" id="inputTel" type="tel" value="" placeholder="Insert mobile">
+            <br>
+            <br> 
+            <label id="labBirth">Birthday *</label>
+            <input class="input" id="inputBirth" type="date" value="" placeholder="Insert birthday">
+            <br>
+            <br>
+
+            <label id="lablePass">password *</label>
+            <input class="input" id="inputPass"type="password" value="" placeholder="Insert password">
+            <input id="showpass" type="radio" onclick="showPassword(id)">show pass
+            <br>
+            <br>
+            <label id="labRepass">Re-Password *</label>
+            <input class="input" id="repass" type="password" value="" placeholder="Repeat password">
+          
+            <br> 
+            
+            <label id="logRes"></label>
+            <h4 id="termsLab">Terms of Use</h4>
+            <p id="Terms">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut, nobis voluptatibus! Nam quas, ab, expedita fugit recusandae blanditiis architecto natus impedit facere cumque sed cum, illo omnis totam ullam maxime. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus excepturi alias praesentium sint, suscipit facilis repellendus ea aliquam tempore eum maxime architecto nesciunt quasi molestias quibusdam vitae nisi voluptate! Nulla!</p>
+            <input id="radAg" class="radAg" type="radio" name="Agree">
+            <label id="ragAgLab" class="radAg">Agree</label>
+            <label id="radAgWrong">You must accept terms first</label>
+            <br><br>
+             <input id="btn-reg"  class="btnProp" type="button" value="Register" name="Register">
+            <a   href="#"><input id="btnGoToLog" type="button" value="Back to log in" class="btnProp"></a>
+          </form>
+
+          `
+          )
+        function setItemsInDivReg(){
+          document.querySelector("#inlogningRegCard").innerHTML=divInlogningRegCard;
+         document.querySelector("#regCard").innerHTML=divRegCard;
+        }
+        setItemsInDivReg();
+
+       // **********************************
+          let usersAll;
+          let allUsersInStor=JSON.parse(localStorage.getItem('usersAll'));
+          let allUser=[];
+
+          let edit=false;
+          let Log=false;
+          const fName=document.getElementById("inputFirst");
+          const lNAme=document.getElementById("inputLast");
+          const email=document.getElementById("inputEmail");
+          const mobile=document.getElementById("inputTel");
+          
+          const birth=document.getElementById("inputBirth");
+          const pass=document.getElementById("inputPass");
+          const repeatPass=document.getElementById("repass");
+          const logRes=document.getElementById("logRes");
+         if(sessionStorage.getItem("edit")!==null){
+          edit=JSON.parse(sessionStorage.getItem("edit"));
+         }
+         if(sessionStorage.getItem("Log")!==null){
+          Log=JSON.parse(sessionStorage.getItem("Log"));
+         }
+          let cardLogin=document.querySelector("#inlogningRegCard");
+          let cardReg=document.querySelector("#regCard");
+
+          function showLogInPage(){
+            cardReg.style.display="none"; 
+          cardLogin.style.display="block";
+          };
+          function showRegisterPage(){
+            cardReg.style.display="block"; 
+          cardLogin.style.display="none";
+          };
+          showLogInPage();
+          
+           if(edit===true||Log===true){
+            showRegisterPage();
+          sessionStorage.setItem("edit",false);
+          sessionStorage.setItem("Log",false);
+          
+          fillUserProp();
+          }; 
+
+          function fillUserProp(){
+
+            document.getElementById("signUp").innerText = "Edit user";
+            document.getElementById("Terms").style.display = "none";
+            document.getElementById("ragAgLab").style.display = "none";
+            document.getElementById("termsLab").style.display = "none";
+            
+            document.getElementById("radAg").style.display = "none";
+            document.getElementById("radAg").checked="true";
+            document.getElementById("btn-reg").value = "Save";
+            document.getElementById("btnGoToLog").value = "Cancel";
+            document.getElementById("btnGoToLog").addEventListener("click",goPrevusPage);
+            function goPrevusPage(){
+              href = window.history.back();
+            }
+            
+            if(sessionStorage.getItem("userEmail")!==null)
+            {
+            let userEmailSess=sessionStorage.getItem("userEmail");
+            for (let i = 0; i < allUsersInStor.length; i++) {
+              const users = allUsersInStor[i];
+              
+              
+                if (users.email===userEmailSess) {
+                  fName.value=users.first;
+                  lNAme.value=users.last;
+                  email.value=users.email;
+                 
+                  mobile.value=users.tel;
+                  birth.value=users.birth;
+                  pass.value=users.password;
+                  
+                  
+                }
+              
+              
+            }
+           
+            
+          };
+        }
+          
+
+          let radAg=document.querySelector("#radAg");
+          
+          let inputUserLog=document.querySelector("#inputUserLog");
+            
+          let inputPassLog=document.querySelector("#inputPassLog");
+            
+          let labWrongInMessage=document.querySelector("#labWrongInMessage");
+          let btnGoToLog=document.querySelector("#btnGoToLog");
+          let btnLogIn=document.querySelector("#btnLogIn");
+          let btnRegNewUser=document.querySelector("#btnRegNewUser");
+          let btnReg=document.querySelector("#btn-reg");
+          let showpassId=document.getElementById("showpass");
+          
+         
+
+        function loadEventListeners(){
+          
+          document.getElementById("btn-reg").addEventListener("click",checkInputEmpty);
+          radAg.addEventListener("click",removeWrongeMess);
+          fName.addEventListener("keyup",inputFocus);
+          email.addEventListener("keyup",inputFocus);
+          mobile.addEventListener("keyup",inputFocus);
+          birth.addEventListener("click",inputFocus);
+          pass.addEventListener("keyup",inputFocus);
+          repeatPass.addEventListener("keyup",inputFocus);
+          pass.addEventListener("focus",uncheck);
+          inputUserLog.addEventListener("focus",removeWrong);
+          inputPassLog.addEventListener("focus",removeWrong);
+          btnGoToLog.addEventListener("click",showLogIn);
+          btnLogIn.addEventListener("click",showLogIn);
+          btnRegNewUser.addEventListener("click",showLogIn);
+    };
+    loadEventListeners();
+    
+   
+
+        function checkPass(){
+          
+          let passsVal=pass.value;
+          let rePasssVal=repeatPass.value;
+          
+         
+
+          if (passsVal===rePasssVal) {
+              logRes.innerText="Password is matching" 
+              }
+              else{
+              logRes.innerText=" Password is not matching"
+              pass.value="";
+              repeatPass.value="";
+          } 
+          
+        }
+        
+        function removeWrongeMess(){
+            document.querySelector("#radAgWrong").style.display="none";
+          };
+        function checkInputEmpty(){
+        let checkInputValue=true;
+        if(radAg.checked===true){
+          checkPass();
+            if (fName.value==='') {
+              changeBorderColor(fName);
+              checkInputValue= false;
+
+              }
+              else{
+                grayBorderColor(fName)
+              
+              };
+              if (email.value==='') {
+                changeBorderColor(email);
+                checkInputValue= false;
+              }
+              else{grayBorderColor(email);
+               
+              };
+              if (mobile.value==='') {
+                changeBorderColor(mobile);
+                checkInputValue= false;
+              }
+              else{grayBorderColor(mobile);
+              
+              };
+              if (birth.value==='') {
+                changeBorderColor(birth);
+                checkInputValue= false;
+              }
+              else{grayBorderColor(birth);
+                
+              };
+              if (pass.value===''||repeatPass==='') {
+                changeBorderColor(pass);
+                changeBorderColor(repeatPass);
+                checkInputValue= false;
+              } 
+              else{
+                grayBorderColor(pass);
+                grayBorderColor(repeatPass);
+                
+                  };
+              if(checkInputValue){
+              alert("Every think is ok");
+              UserProp();
+              };  
+            }else{
+              document.querySelector("#radAgWrong").style.display="block";
+            }
+              
+        };
+
+        function changeBorderColor(id){
+          
+          id.style.borderColor='red';
+        };
+        function grayBorderColor(id){
+          
+          id.style.borderColor='gray';
+        };
+        
+
+        function inputFocus(e){
+          e.target.style.borderColor="gray";
+
+        };
+
+        
+        
+
+        function check() {
+          document.getElementById("showpass").checked = true;
+        }
+
+        function uncheck() {
+            console.log("clicked");
+          document.getElementById("showpass").checked = false;
+          pass.type="password"
+
+
+        } 
+        function showPassword(radId){
+            let id=document.getElementById(radId)
+            
+            if (id.checked===true) {
+                
+                pass.type="text";
+          }
+        }
+        function emptyInput(){
+          document.getElementById("inputFirst").value="";
+          document.getElementById("inputLast").value="";
+          document.getElementById("inputEmail").value="";
+          document.getElementById("inputBirth").value="";
+          document.getElementById("inputTel").value="";
+          document.getElementById("inputPass").value="";
+          document.getElementById("repass").value="";
+        };
+
+
+        
+        function UserProp(){
+          let creatUserName=email.value;
+          creatUserName = {first:fName.value, last:lNAme.value, email:email.value,birth:birth.value,password:pass.value,tel:mobile.value,lists:[]};
+          console.log(creatUserName);
+          emptyInput();
+          
+          email.value="";
+          birth.value="";
+          pass.value="";
+          repeatPass.value="";
+          mobile.value="";
+          allUser.push(creatUserName);
+          
+          setInStorage(creatUserName);
+
+        };
+        
+
+
+        
+        console.log(allUsersInStor);
+      
+
+        function checkUserName(fNameP,PassU){
+          if(allUsersInStor===null){
+           alert("You don't have any user");
+            inputUserLog.value="";
+            inputPassLog.value="";
+         }
+          else{
+        for (let i = 0; i < allUsersInStor.length; i++) {
+          const email = allUsersInStor[i].email;
+          const passUser = allUsersInStor[i].password;
+          
+          if(fNameP===email&&PassU===passUser){
+            alert("email and pasword is correct")
+            location.href = "index.html";
+            sessionStorage.setItem("userEmail",fNameP);
+            break;
+          }else{
+            labWrongInMessage.style.display="block";
+            inputUserLog.value="";
+            inputPassLog.value="";
+          };
+          
+        }
+        }
+        };
+
+
+        //**********Set user in local storage*******
+        let checkUserInStorage=false;
+        function setInStorage(anvendare){
+          
+          if(localStorage.getItem('usersAll')===null){
+            
+            usersAll=[];
+            
+          }else{
+           
+          usersAll=JSON.parse(localStorage.getItem('usersAll'));
+            
+          
+        }
+        
+         for (let i = 0; i < usersAll.length; i++) {
+          let user = usersAll[i];
+          if(user.email===anvendare.email){
+            
+            user.first=anvendare.first;
+            user.last=anvendare.last;
+            user.email=anvendare.email;
+            user.birth=anvendare.birth;
+            user.password=anvendare.password;
+            checkUserInStorage=true;
+          };
+          
+        } 
+        if (checkUserInStorage===false) {
+          
+          usersAll.push(anvendare);
+        }
+        localStorage.setItem('usersAll',JSON.stringify(usersAll));
+        location.href = "index.html";
+        alert("Saved your changes");
+        };
+
+        //******************************************
+     
+          
+          function removeWrong(){
+            labWrongInMessage.style.display="none";
+          
+          };
+
+          function showLogIn(e){
+            
+            let elementId=e.target.id;
+            
+          
+            switch (elementId) {
+              case "btnGoToLog":
+              
+                cardReg.style.display="none"; 
+                cardLogin.style.display="block";
+              
+              
+                break;
+              case "btn-reg":
+                alert("The user regesterd ... Done");
+                 
+                  
+                  break;
+              case "btnRegNewUser":
+              
+              sessionStorage.setItem("Log",true);
+              showRegisterPage();
+                  
+                  
+                    
+                    break;
+              case "btnLogIn":
+                      checkUserName(inputUserLog.value,inputPassLog.value);
+                      
+                      
+                      break;
+                      
+                      default:
+                      
+                alert("you dont chosed ")
+                break;
+            }
+          };
+          
+  
+  //****************** End Register code************************************* */
+
+  </script>
+</body>
+</html>

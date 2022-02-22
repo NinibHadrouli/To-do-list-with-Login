@@ -1,0 +1,386 @@
+#titleName{
+    background-image: linear-gradient(10deg,rgb(80, 66, 202),rgb(104, 205, 223)43%,white 100%);
+    /* background-image: repeating-linear-gradient(white,red);
+    background-image: radial-gradient(white,red);
+    background-image: repeating-radial-gradient(white,red);
+    background-image: cross-fade(rgb(38, 172, 20),red);
+    background-image: -webkit-repeating-linear-gradient(rgb(38, 172, 20),red);
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 43%, rgba(0,212,255,1) 100%);
+    */
+    padding:10px 0 10px 80px;
+    border-radius: 15px;
+    color: white;
+    text-shadow: rgb(88, 88, 94)2px 2px;
+    font-size: 35px;
+}
+.listName{
+  padding: 0px 0 50px 15px;
+}
+.allList1{
+    padding-top: 20px;
+    margin: 20px auto;
+    background-color: rgb(199, 233, 253);
+    width: 80%;
+    
+    border: 2px solid rgb(88, 88, 94) ;
+    border-radius: 7px;
+    padding-bottom: 30px;
+    box-shadow: 0px 0px 10px  #7c7a7a;
+}
+.card2{
+    padding-top: 20px;
+    margin: 20px auto;
+    background-color: rgb(23, 180, 128);
+    width: 800px;
+    
+    border: 2px solid rgb(88, 90, 94) ;
+    border-radius: 7px;
+    padding-bottom: 30px;
+    box-shadow: 0px 0px 10px  #7c7a7a;
+}
+.liProp{
+    padding: 0 1000px 10px 10px;
+    margin:0 0 0 20px;
+    font-size: 22px;
+    width: 800px;
+    color: white;
+    text-shadow: 1px 1px black;
+    
+}
+.liProp:hover{
+    cursor: pointer;
+    color: rgb(50, 34, 121);
+    text-shadow: 1px 1px white;
+}
+#olItem{
+    margin: 0 auto; 
+    background-color: rgb(194, 238, 153);
+    width: 600px;
+    border-radius: 5px;
+    
+}
+#inputItem{
+    margin:auto 0px auto 13%;
+    background-color: inherit;
+    border: none;
+    border-bottom: 1px solid rgb(94, 92, 92);
+}
+#wrongMessage{
+    visibility: hidden;
+    color: red;
+    padding-top: 0;
+    margin:0 10px 0 115px;
+}
+.textData{
+    padding:0 10px 0 5px;
+    float: right;
+}
+
+
+.iconProp{
+    padding-top: 4px;
+    color: white;
+}
+.mOver:hover{
+    color: rgb(72, 117, 243);
+    cursor: pointer;
+    
+
+}
+.mOverDel:hover{
+    color: red;
+    cursor: pointer;
+    
+}
+body{
+     padding: 10px 0 0 0; 
+   margin: 0 auto; 
+   /* text-align: center; */
+   width: 80%;
+}
+.table{
+   margin: 20px auto;
+   background-color: white;
+   width: 80%;
+   border: 2px solid rgb(88, 88, 94) ;
+   border-radius: 7px;
+   padding-bottom: 30px;
+   box-shadow: 0px 0px 10px  #7c7a7a;
+}
+
+.table th{
+    
+    background-color: rgb(252, 181, 88);
+    
+    border-radius: 5px;
+    height: 30px;
+    color: white;
+    box-shadow: 0px 2px 4px  #7c7a7a;
+    
+    
+}
+#UName{
+    text-align: right;
+    color: coral;
+    display: inline;
+}
+#edit{
+    font-size: 20px;
+    margin-left: 10px;
+    color: blue;
+    cursor: pointer;
+   
+    transition-duration: 0.4s;
+}
+#edit:hover{
+    font-size: 24px;
+    color: rgb(67, 9, 202);
+}
+#Number{
+    width: 15%;
+    
+}
+#inputItem{
+    padding: 5px;
+    width: 40%;
+    font-size: 20px;
+    
+}
+#btnAdd{
+    
+   
+    font-size: 30px;
+    position: absolute;
+    border-radius: 5px;
+    
+    color: gray;
+    cursor: pointer; 
+    transition-duration: 0.4s;
+    
+      
+    }
+#btnAdd:hover{
+    
+      /*   background-color:white; /* Green */ 
+        color:rgb(34, 106, 139);
+        
+        
+     
+}
+.ElemnetData{
+    border-bottom: 1px solid rgb(182, 185, 183);
+    padding:10px 0 1px 5px;
+    margin: 0;
+
+    color: rgb(43, 38, 119);
+    font-size: 18px;
+    
+}
+#listName{
+    display: inline-block;
+   background-color: rgb(224, 148, 61);
+   background-size: 10%;
+   font-size: 20px;
+   padding: 4px;
+   border-radius: 5px;
+   color: white;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ 
+}
+#listNameLab{
+    font-size: 22px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#btnNewList{
+    margin-top: 50px;
+    padding-left: 5px;;
+    font-size: 30px;
+    position: absolute;
+    border-radius: 5px;
+    
+    color: gray;
+    cursor: pointer; 
+    transition-duration: 0.4s;
+}
+#inNewLisNa{
+    margin-top: 50px;
+    height: 25px;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 18px;
+}
+.listProp{
+    width: 49%;
+    display: inline-block;
+    padding-left: 90px;
+    vertical-align: top;
+   
+}
+.allUserLists{
+    
+    width: 330px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: inline-block;
+    
+    
+}
+.allUserLists ul{
+    background-color: rgb(163, 160, 160);
+    border-radius: 5px;
+    height: 100px;
+    overflow: scroll;
+    padding-bottom: 0;
+    padding: 7px;
+   
+}
+.allUserLists li{
+    color: white;
+    font-size: 20px;
+    
+}
+.allUserLists li:hover{
+    background-color: rgb(206, 201, 206);
+    transition-duration: 0.4s;
+    border-radius: 3px;
+    padding-left: 7px;
+    cursor: pointer;
+    
+    
+}
+.allUserLists label{
+    font-size: 30px;
+    text-shadow: 1px 1px  black;
+    color: rgb(252, 177, 80);
+    
+}
+#btnLogOut{
+    padding: 7px;
+    float: right;
+    color: white;
+    background-color: rgb(64, 118, 235);
+    border-radius: 3px;
+}
+#labWrongInMessage{
+    color: red;
+    display: none;
+    font-size: 15px;
+    padding-left: 145px;
+}
+#radAgWrong{
+    color: red;
+    display: none;
+    font-size: 15px;
+}
+/****************** Register CSS ************/
+#bodyProp{
+    background-color: blue;
+    background-image: url(images/background\ reg.jpg);
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family:  'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    color: white;
+    text-shadow:2px 2px rgb(50, 34, 121);
+    
+}
+#inputUserLog{
+    margin-left: 90px;
+}
+#inputPassLog{
+    margin-left: 49px;
+}
+#req{
+    
+    display: inline;
+    font-size: 16px;
+    padding-left: 500px;
+    color: rgb(243, 166, 88);
+    
+}
+#signUp{
+    display: inline;
+    font-size: 30px;
+    color: rgb(139, 0, 97);
+    margin:50px  0 50px 0;
+    padding:50px  0 50px 0;
+   
+
+}
+#Terms{
+    width: 600px;
+    height: 100px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-shadow: none;
+    overflow: scroll;
+}
+.radAg{
+    padding-right: 50px;
+   
+    font-size: 14px;
+}
+.regCard{
+    
+    box-shadow:2px 2px 20px 9px rgb(253, 253, 253);
+    padding: 20px;
+    border-radius: 5px;
+    margin: 150px auto;
+    width: 800px;
+    background-color: rgba(213, 230, 243, 0.253);
+}
+.input{
+    
+    text-align: left;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+
+}
+#inputFirst{
+    margin:0 30px 0 30px;
+    
+}
+#inputLast{
+    margin:0 80px 0 20px;
+}
+#inputEmail{
+    margin-left: 78px;
+}
+#inputTel{
+    margin-left: 66px;
+}
+#inputBirth{
+    margin-left: 51px;
+}
+#inputPass{
+    margin-left: 38px;
+}
+#repass{
+    margin-left: 8px;
+}
+#logRes{
+    font-size: 12px;
+    color: red;
+    margin-left: 140px;
+}
+.btnProp{
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(72, 117, 243);
+}
+
+
+
+
+/****************** Finish Register CSS ************/
+
+          
